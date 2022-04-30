@@ -14,25 +14,27 @@ export default class Home extends Component {
     event.preventDefault();
 
     this.context.setUser(event.target.name.value);
-    event.target.reset();
     this.setState({ shouldRedirect: true })
   }
 
 
 
   render() {
-
     return (
       <section>
-        <form action="" onSubmit={this.handleSubmit}>
-          <label htmlFor="name">Name: </label>
-          <input type="text" name='name' />
+        {this.context.user === '' ?
+          <form action="" onSubmit={this.handleSubmit}>
+            <label htmlFor="name">Name: </label>
+            <input type="text" name='name' />
 
-          <button type='submit'>Enter</button>
-
-          {this.state.shouldRedirect && <Navigate replace to="/list" />}
-        </form>
+            <button type='submit'>Enter</button>
+          </form>
+          :
+          <h1>Welcome {this.context.user}</h1>
+        }
+        {this.state.shouldRedirect && <Navigate replace to="/list" />}
       </section>
     )
   }
 }
+

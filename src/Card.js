@@ -8,7 +8,7 @@ export default class Card extends Component {
   render() {
       const { headline, abstract, author, date, id } = this.props.news;
     return (
-      <div>
+      <div className='news-card'>
           <h3>{headline}</h3>
           <p>{abstract}</p>
           <p>{author}</p>

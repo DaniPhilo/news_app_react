@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: calc(100vw / 10);
+    max-height: 100px;
+}
+
+nav {
+    height: 3rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    height: 100%;
+    padding: 0 2rem;
+
+    list-style-type: none;
+    border: 1px solid red;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+
+}
+
+li>a {
+    padding: 1rem 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+}
+
+section {
+    width: 90vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80vw;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+form>label,
+form>input,
+form>button {
+    margin-top: 1rem;
+}
+
+form>textarea:nth-of-type(1) {
+    width: 75vw;
+    max-width: 700px;
+    height: 50px;
+    margin: 0.5rem;
+}
+
+form>textarea:nth-of-type(2) {
+    width: 75vw;
+    max-width: 700px;
+    height: calc(75vw / 3);
+    max-height: 250px;
+    margin: 0.5rem;
+}
+
+h1,
+h2,
+h3 {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.news-card {
+    width: calc(100% - 1rem);
+    max-width: 400px;
+    padding: 0.5rem;
+}
+
+.news-card > p {
+    margin: 0.5rem 0;
+}
+
+.news-card > button {
+    display: block;
+    margin-left: auto;
+}

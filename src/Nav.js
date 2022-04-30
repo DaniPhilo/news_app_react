@@ -14,7 +14,7 @@ export default class Nav extends Component {
                             <NavLink to="/form">Form</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/list">NewsList</NavLink>
+                            <NavLink to="/list">News</NavLink>
                         </li>
                     </ul>
                 </nav>

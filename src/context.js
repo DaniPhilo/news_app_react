@@ -23,8 +23,6 @@ class ContextProvider extends React.Component {
         const { customNews, user } = this.state;
         const { setCustomNews, setUser } = this;
 
-        console.log(customNews)
-
         return (
             <GlobalContext.Provider value={{ customNews, user, setCustomNews, setUser }}>
                 {children}

@@ -26,7 +26,6 @@ export default class Form extends Component {
     }
 
     this.context.setCustomNews(customNews);
-    event.target.reset();
 
     this.setState({shouldRedirect: true})
   }
@@ -37,10 +36,10 @@ export default class Form extends Component {
         <h2>Create news:</h2>
         <form action="" onSubmit={this.handleSubmit}>
           <label htmlFor="headline">Headline: </label>
-          <input type="text" name='headline' />
+          <textarea type="text" name='headline' />
 
           <label htmlFor="abstract">Abstract: </label>
-          <input type="text" name='abstract' />
+          <textarea name='abstract' />
 
           <button type='submit'>Save</button>
 
