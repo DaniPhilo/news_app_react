@@ -19,6 +19,7 @@ export default class Form extends Component {
     const year = t.getFullYear();
 
     const customNews = {
+      id: Math.random(),
       headline: event.target.headline.value,
       abstract: event.target.abstract.value,
       author: this.context.user,
@@ -41,7 +42,7 @@ export default class Form extends Component {
           <label htmlFor="abstract">Abstract: </label>
           <textarea name='abstract' />
 
-          <button type='submit'>Save</button>
+          <button type='submit' className='btn'>Save</button>
 
           {this.state.shouldRedirect && <Navigate replace to="/list" />}
 

@@ -21,18 +21,28 @@ export default class Home extends Component {
 
   render() {
     return (
-      <section>
-        {this.context.user === '' ?
+      // <section id='home-section'>
+      //   {this.context.user === '' ?
+      //     <form action="" onSubmit={this.handleSubmit}>
+      //       <label htmlFor="name">Name: </label>
+      //       <input type="text" name='name' />
+
+      //       <button type='submit' className='btn'>Enter</button>
+      //     </form>
+      //     :
+      //     <h2>Welcome {this.context.user}</h2>
+      //   }
+      //   {this.state.shouldRedirect && <Navigate replace to="/list" />}
+      // </section>
+
+      <section id='home-section'>
           <form action="" onSubmit={this.handleSubmit}>
             <label htmlFor="name">Name: </label>
             <input type="text" name='name' />
 
-            <button type='submit'>Enter</button>
+            <button type='submit' className='btn'>Enter</button>
           </form>
-          :
-          <h1>Welcome {this.context.user}</h1>
-        }
-        {this.state.shouldRedirect && <Navigate replace to="/list" />}
+          {this.state.shouldRedirect && <Navigate replace to="/list" />}
       </section>
     )
   }

@@ -42,7 +42,7 @@ export default class ListNews extends Component {
         return (
             <section className='news-container'>
                 {this.state.isLoading ?
-                    <div>Loading...</div> :
+                    <div className='loading'>Loading...</div> :
                     this.state.news.map((news, index) => {
                         return (
                             <>

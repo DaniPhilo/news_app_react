@@ -8,7 +8,8 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <p>{this.context.user ? `User: ${this.context.user}` : 'No user'}</p>
+        <h1 id='title'>News<span>_app</span></h1>
+        <p id='subtitle'>{this.context.user ? `User: ${this.context.user}` : 'No user'}</p>
       </header >
     )
   }

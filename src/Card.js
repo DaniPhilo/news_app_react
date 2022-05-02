@@ -13,7 +13,7 @@ export default class Card extends Component {
           <p>{abstract}</p>
           <p>{author}</p>
           <p>{date.match(/^[\w\d\W]{0,10}/gi)}</p>
-          <button type='button' onClick={() => this.props.deleteNews(id)}>Delete</button>
+          <button type='button' className='btn' onClick={() => this.props.deleteNews(id)}>Delete</button>
       </div>
     )
   }
