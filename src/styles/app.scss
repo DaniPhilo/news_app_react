@@ -150,7 +150,12 @@ form>textarea:nth-of-type(2) {
     background-color: $accent-primary-color;
     color: $primary-color;
     border: none;
-    Border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: $hover-btn-color;
 }
 
 .news-container {
